@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style_spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="s-top">
+                <div class="s-top_option">
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="s-top_option search">
+                    <a href="#" id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;&nbsp;
+                        <span>Search</span>
+                    </a>
+                </div>
+            </div>
+            <div class="s-btm">
+                <div class="s-btm_option">
+                    <a href="#" id="libr">
+                        <i><img src="assets/library_icon.png" style="width: 25px; height: 23px;"></i>&nbsp;&nbsp;&nbsp;
+                        <span>Your Library</span>
+                    </a>
+                    <div class="s-btm_option-btn">
+                        <a href="#" id="libr-btn"><i class="fa-solid fa-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                        <a href="#" id="libr-btn"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+
+                <div class="s-btm_boxes">
+                    <div class="box-1">
+                        <span>Create your first playlist</span>
+                        <p>It's easy, we'll help you</p>
+                        <button type="button"><a href="#">Create Playlist</a></button>
+                    </div>
+                    <div class="box-2">
+                        <span>Let's find some podcasts to follow</span>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button type="button"><a href="#">Browse podcasts</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="nav-top">
+                <div class="top-left-btn">
+                    <a href="#" id="bck-btn"><img src="assets/backward_icon.png" style="width: 25px; height: 23px;"></a>
+                    <a href="#" id="frw-btn"><img src="assets/forward_icon.png" style="width: 25px; height: 23px;"></a>
+                </div>
+
+                <div class="top-right-btn">
+                    <div class="rbt-1 btns">
+                        <a href="#"><button type="button">Explore Premium</button></a>
+                    </div>
+                    <div class="rbt-2 btns">
+                        <a href="#" class="rst">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span>Install App</span>
+                        </a>
+                    </div>
+                    <div class="rbt-3 btns">
+                        <a href="#" class="rst"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#"><span class="heading">Recently Played</span></a>
+            <div class="cards-container">
+                <div class="card-body">
+                    <img class="card-img" src="assets/card1img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks right...</p>
+                </div>
+            </div>
+            <a href="#"><span class="heading">Popular albums</span></a>
+            <div class="cards-container">
+                <div class="card-body">
+                    <img class="card-img" src="assets/card5img.jpg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Ashiqui 2</p>
+                    <p class="card-info">Mithoon, Ankit Tiwari, Jeet Ganguli</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card6img.jpg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Champagne Talk</p>
+                    <p class="card-info">King</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card7img.jpg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Still Rollin</p>
+                    <p class="card-info">Shubh</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card8img.jpg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Obsessesd</p>
+                    <p class="card-info">Riar Saab, Abhijay Sharma</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card9img.jpg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Phir Aur Kya Chaiye</p>
+                    <p class="card-info">Sachin-Jigar, Arijit Singh. Amitabh...</p>
+                </div>
+            </div>    
+            <a href="#"><span class="heading">Trending now near you</span></a>
+            <div class="cards-container">
+                <div class="card-body">
+                    <img class="card-img" src="assets/card2img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card3img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card4img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Naa Ready</p>
+                    <p class="card-info">Anirudh Ravichander</p>
+                </div>
+            </div>   
+            <a href="#"><span class="heading">Featured Charts</span></a>
+            <div class="cards-container">
+                <div class="card-body">
+                    <img class="card-img" src="assets/card10img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your Weekly update of the most played tracks right...</p>
+                </div>
+                <div class="card-body">
+                    <img class="card-img" src="assets/card11img.jpeg">
+                    <img class="card-play" src="assets/play.png">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your Weekly update of the most played tracks right...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"><hr></div>
+            </div>   
+        </div>
+        <div class="music-player">
+            <div class="left-cntrl">
+                <img src="assets/card2img.jpeg" class="song-thmbn">
+                <div class="left-info">
+                    <div class="info">
+                        <p class="song-name">Mahiye Jinna Sohna</p>
+                        <p class="singer-name">Darshan Raval</p>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="material-symbols-outlined">
+                        picture_in_picture_alt
+                    </span>
+                </div>
+            </div>
+
+            <div class="center-cntrl">
+                <div class="play-options">
+                    <img src="assets/player_icon1.png" class="other-icons">
+                    <img src="assets/player_icon2.png" class="other-icons">
+                    <img src="assets/player_icon3.png" class="play-icon">
+                    <img src="assets/player_icon4.png" class="other-icons">
+                    <img src="assets/player_icon5.png" class="other-icons">
+                </div>
+                <div class="music-slider">
+                    <div class="start-time"><span>0:00</span></div>
+                    <input type="range">
+                    <div class="end-time"><span>2:41</span></div>
+                </div>
+            </div>
+
+            <div class="right-cntrl">
+                <div class="rt-cntrls">
+                    <img src="assets/controls_icon1.png" class="rt-icons">
+                    <img src="assets/controld_icon2.png" class="rt-icons">
+                    <img src="assets/controls_icon3.png" class="rt-icons">
+                    <img src="assets/controls_icon4.png" class="rt-icons">
+                    <img src="assets/controls_icon5.png" class="rt-icons">
+                    <input type="range">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
